@@ -15,7 +15,6 @@
     svg .municipality.p6 { fill: rgb(33,113,181); }
     svg .municipality.p7 { fill: rgb(8,81,156); }
     svg .municipality.p8 { fill: rgb(8,48,107); }
-    svg text { font-size: 10px; }
     </style>
   </head>
   <body>
@@ -47,7 +46,7 @@
 
     queue()
         .defer(d3.json, "municipalities-topo-simple.json")
-        .defer(d3.csv, "population-edited.csv", function(d) { popByName.set(d.name, +d.population); })
+        .defer(d3.csv, "population.csv", function(d) { popByName.set(d.name, +d.population); })
         .await(ready);
 
     function ready(error, data) {
@@ -59,14 +58,6 @@
           .attr("class", function(d) { return "municipality " + quantize(popByName.get(d.properties.name)/path.area(d)); })
           .attr("d", path)
           .attr("id", function(d) { return d.properties.name; });
-
-      svg.selectAll("text")
-          .data(features.filter(function(d) { return d.properties.name.endsWith("시"); }))
-        .enter().append("text")
-          .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-          .attr("dy", ".35em")
-          .attr("class", "region-label")
-          .text(function(d) { return d.properties.name; });
     }
     </script>
   </body>
