@@ -1,157 +1,119 @@
-Table of Contents
+목차
 ===
 
-## Chapter 1: Visual Storytelling and D3
+## 1장 시각적 스토리텔링과 D3 
+- 1.1 시각화를 ‘시각화’하기
+- 1.2 시각화로 데이터에 형태를 입히고 형태에서 스토리 찾아내기
+- 1.3 시각화의 품질은 내용이 좌우한다
+- 1.4 어떤 시각적 요소와 속성을 사용하는지가 중요하다
+- 1.5 시각적 스토리텔링
+- 1.6 D3를 소개합니다!
+- 1.7 디자이너가 D3를 사랑할 수밖에 없는 이유
+- 1.8 프로그래머가 D3를 사랑할 수밖에 없는 이유
+- 1.9 D3를 사용하면 안 되는 경우
+- 1.10 D3를 사용할 때 유의사항
+- 1.11 D3를 사용할 때 필요한 준비물
+- 1.12 요약
 
-- Visualization, Visualized
-- Charts Give Data a Form—That Form Tells a Story
-- Quality: It is all about Content
-- Design: It is all about Form
-- Visual Storytelling
-- Enter D3
-- Things you Designers will Love about D3
-- Things you Coders will Love about D3
-- Things for Which you Should not use D3
-- Notes on Using D3
-- Tools you will Need
-- Summary
+## 2장 데이터 기반 스토리를 찾고 시각적으로 전달하기
+- 2.1 시작하기
+- 2.2 세상은‘늙어가고’있는가?
+- 2.3 데이터를 찾고 탐색하기
+- 2.4 콘셉트 갈고 닦기
+- 2.5 형태 고르기
+- 2.6 이 책에서 다룰 예제
+- 2.7 요약
 
-## Chapter 2: Finding a Data-Driven Story and Telling It Visually
+## 3장 SVG - 확장 가능한 벡터 그래픽 
+- 3.1 원리 살펴보기
+- 3.2 SVG는 정확하게 무엇인가? 
+- 3.3 SVG를 통해 원 만들기
+- 3.4 개발자 도구를 통해서 SVG 살펴보기
+- 3.5 CSS를 이용해서 SVG 요소 꾸미기
+- 3.6 다른 도형
+- 3.7 SVG 문자
+- 3.8 SVG 스타일 속성
+- 3.9 출력 순서 조절 및 그룹화
+- 3.10 변환
+- 3.11 SVG로 막대 그래프 만들기
+- 3.12 요약
 
-- Getting Started
-- Is the World Getting Older?
-- Finding and Inspecting Data
-- Honing the Concept
-- Choosing a Form
-    - Showing the Data as a Column Chart
-    - Showing the Data as a Stacked Column Chart
-    - Showing the Data as a Line Chart
-    - Showing the Data as a Pie Chart
-    - Showing the Data as a Bar Chart
-    - Showing the Data as a Small Multiple Bar Chart
-    - Chart Suggestions—A Thought Starter
-- The Example we will Build in this Book
-- Summary
+## 4장 D3 선택영역으로 웹페이지 꾸미기 81
+- 4.1 D3 설정하기
+- 4.2 선택영역 만들기
+- 4.3 선택영역 속성 변경하기
+- 4.4 선언적인 D3
+- 4.5 연속적으로 메서드 연결시키기
+- 4.6 새로운 요소 추가하기
+- 4.7 지금까지 배운 것 종합하기
+- 4.8 d3.selectAll()을 사용해서 여러 요소 선택하기
+- 4.9 선택영역으로 막대 그래프 만들기
+- 4.10 요약
 
-## Chapter 3: Scalable Vector Graphics
+## 5장 데이터 결합 
+- 5.1 데이터를 결합한다는 것은?
+- 5.2 데이터 결합의 개념 요약
+- 5.3 들어온 데이터 엮기
+- 5.4 데이터 결합으로 막대 그래프 생성하기
+- 5.5 익명함수를 이용해 엮인 데이터에 접근하기
+- 5.6 시각화 마무리하기
+- 5.7 객체에 데이터 저장하기
+- 5.8 요약
 
-- Peeking under the Hood
-- What is SVG, Exactly?
-- Playing with Circles in SVG
-- Inspecting SVG in the Web Inspector
-- Styling SVG Elements with CSS
-- Other Shapes
-    - Rectangles
-    - Rounded Rectangles
-    - Circles
-    - Ellipses
-    - Polygons
-    - Lines
-    - Paths
-- SVG Text
-- SVG Style Properties
-    - Color and Transparency
-    - Stroke Properties
-- Drawing Order and Groups
-- Transformations 
-- Building a Bar Chart in SVG
-- Summary
+## 6장 그래프 크기 조정 및 축 추가하기
+- 6.1 선형 척도
+- 6.2 똑똑하게 여백 설정하기
+- 6.3 축 추가하기
+- 6.4 순서 척도와 축
+- 6.5 요약
 
-## Chapter 4: Shaping Web Pages with D3 Selections
+## 7장 외부 데이터 로딩하고 필터링하기
+- 7.1 전체 연령 분포 데이터를 이용한 시각화 만들기
+- 7.2 D3로 사용할 수 있는 데이터 포맷
+- 7.3 데이터 올릴 서버 생성하기
+- 7.4 데이터를 로딩하기 위한 D3 함수
+- 7.5 비동기 요청 다루기
+- 7.6 (더) 큰 데이터셋 로딩하고 필터링하기
+- 7.7 전체를 하나로 합치기
+- 7.8 요약
 
-- Getting Set Up with D3
-- Making Selections
-    - Using CSS Selectors to Create Selections
-    - Creating Selections from Other Selections
-    - Assigning Selections to Variables
-- Changing a Selection’s Attributes
-    - How `attr()` Works
-    - Using `attr()` to Apply Classes and Style Rules
-- D3 Strives to be Declarative 
-- Chaining Methods
-    - Creating New Selections in the Middle of a Chain
-    - Chains and Variable Assignment 
-- Appending New Elements 
-- Putting it all Together
-- Selecting Multiple Elements with `d3.selectAll()`
-- Building a Bar Chart with Selections
-    - Use Variables
-    - Do Math
-    - Use Better Variables
-    - Use a Variable for your Data
-    - Make your Constraints Explicit
-    - Use Loops
-- Summary
+## 8장 인터랙티브한 동적 시각화 만들기
+- 8.1 데이터 결합하기: 업데이트하고 나가기
+- 8.2 인터랙티브한 버튼 만들기
+- 8.3 시각화 업데이트하기
+- 8.4 트랜지션 추가하기
+- 8.5 키 사용하기
+- 8.6 요약
 
-## Chapter 5: Data-Joins: Enter
+## 9장 재생 버튼 추가하기 
+- 9.1 업데이트 단계를 함수로 바꾸기
+- 9.2 웹페이지에 재생 버튼 추가하기
+- 9.3 재생 가능한 재생 버튼 만들기
+- 9.4 사용자가 재생을 중단할 수 있게 하기
+- 9.5 요약
 
-- What are Data-Joins?
-- A Conceptual Overview of Data-Joins: Enter
-- Enter and Binding Data
-- Using a Data-Join to Make a Bar Chart
-- Using Anonymous Functions to Access Bound Data
-- Finishing the Rest of the Chart 
-- Storing Data in Objects
-- Summary
+## 10장 나만의 시각화 만들기 
+- 10.1 이 책은 D3를 배우기 위한 기본서다
+- 10.2 막혔을 때 뚫고 나오는 법
+- 10.3 항상 코딩하라
+- 10.4 요약
 
-## Chapter 6: Sizing Charts and Adding Axes
+## 부록 A 초보자를 위한 자바스크립트 
+- A.1 자바스크립트에 대한 간략한 설명
+- A.2 브라우저의 자바스크립트 콘솔
+- A.3 간단한 연산, 변수 및 데이터 종류
+- A.4 마크업과 .js 파일로 자바스크립트 사용하기
+- A.5 배열과 객체
+- A.6 메서드와 함수
+- A.7 If문과 for문
+- A.8 디버깅
 
-- Linear Scales
-- Using Smart Margin Conventions 
-- Adding Axes
-- Ordinal Scales and Axes 
-- Summary
+## 부록 B 인구 분포 데이터 전처리하기 
 
-## Chapter 7: Loading and Filtering External Data
-
-- Building a Graphic that Uses all of the Population Distribution Data
-- Data Formats you can use with D3
-- Creating a Server to Upload your Data
-    - Initiating a Server on the Command Line
-    - Creating an Index File
-- D3’s Functions for Loading Data
-    - Callback Functions
-    - How D3 Interprets CSV Tables
-- Dealing with Asynchronous Requests
-    - Creating a Bar Chart with External Data
-- Loading and Filtering a Large(r) Data Set
-- Putting it all Together
-- Summary
-
-## Chapter 8: Making Charts Interactive and Animated
-
-- Data-Joins: Update and Exit
-- Interactive Buttons
-    - Making Buttons Using a Data Join
-    - Making the Buttons Clickable
-- Updating Charts
-- Adding Transitions Using Keys
-- Summary
-
-## Chapter 9: Adding a Play Button
-
-- Wrapping the Update Phase in a Function
-- Adding a Play Button to the Page
-- Making the Play Button Go
-- Allowing the User to Interrupt the Play Sequence
-- Summary
-
-## Chapter 10: Striking Out on Your Own
- 
-- This Book is a Foundation for Learning D3
-- How to Get Unstuck
-- Always be Coding
-- Summary
-
-## Appendix A: JavaScript for Beginners
-
-- JavaScript in Brief
-- Your Browser’s JavaScript Console
-- Basic Math, Variables, and Data Types
-- Writing JavaScript in Markup and .js Files
-- Arrays and Objects
-- Methods and Functions
-- If Statements and for Loops
-- Debugging
-
-## Appendix B: Cleaning the Population Distribution Data
+## 부록 C D3로 우리나라 인구밀도 시각화하기 
+- C.1 다양한 형태의 지도 시각화
+- C.2 지도 및 인구 데이터 구하기
+- C.3 지도 데이터 로딩하기
+- C.4 지도 그리기
+- C.5 지도에 인구밀도 데이터로 색 입히기
+- C.6 시각화 마무리하기
