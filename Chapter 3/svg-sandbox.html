@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	</head>
-<body>
-	<p>SVG sandbox</p>
-	<svg width="500px" height="500px">
-       		<circle cx="100" cy="50" r="20"/>
-	</svg>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            svg {
+                border: 1px solid #eee;
+            }
+            svg a {
+                fill: blue;
+            }
+            svg a:visited {
+                fill: purple;
+            }
+            svg a:hover {
+                text-decoration: underline;
+            }
+            .linecap-demo {
+                stroke: darkmagenta;
+                stroke-width: 5;
+            }
+            .dasharray-demo {
+                stroke: darkmagenta;
+                stroke-width: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <p>SVG sandbox</p>
+
+        <p>그림 3.15.5</p>
+        <svg width="500px" height="100px">
+            <text x="10" y="0" font-size="40">Where did all my text go?</text>
+        </svg>
+
+        <p>그림 3.17.5</p>
+        <svg width="500px" height="100px">
+            <text x="10" y="20">Here's where to go to <a xlink:href="http://www.w3schools.com/svg/svg_text.asp">learn more about SVG text</a>, including how to rotate it</text>
+        </svg>
+
+        <p>그림 3.20</p>
+        <svg width="500px" height="100px">
+            <text x="0" y="20" font-weight="bold">Linecaps</text>
+            <text x="0" y="50">Butt</text>
+            <line x1="60" y1="45" x2="200" y2="45" class="linecap-demo" stroke-linecap="butt"/>
+            <text x="0" y="70">Round</text>
+            <line x1="60" y1="65" x2="200" y2="65" class="linecap-demo" stroke-linecap="round"/>
+            <text x="0" y="90">Square</text>
+            <line x1="60" y1="85" x2="200" y2="85" class="linecap-demo" stroke-linecap="square"/>
+        </svg>
+
+        <p>그림 3.21</p>
+        <svg width="500px" height="100px">
+            <text x="0" y="20" font-weight="bold">Dasharrays</text>
+            <text x="100" y="50" text-anchor="end">1 1</text>
+            <line x1="110" y1="45" x2="350" y2="45" class="dasharray-demo" stroke-dasharray="1 1"/>
+            <text x="100" y="70" text-anchor="end">10 4 4 4</text>
+            <line x1="110" y1="65" x2="350" y2="65" class="dasharray-demo" stroke-dasharray="10 4 4 4"/>
+            <text x="100" y="90" text-anchor="end">5 10 1 20 30 5</text>
+            <line x1="110" y1="85" x2="350" y2="85" class="dasharray-demo" stroke-dasharray="5 10 1 20 30 5"/>
+        </svg>
+    </body>
 </html>
+
